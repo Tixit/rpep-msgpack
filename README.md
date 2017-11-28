@@ -2,7 +2,7 @@
 `rpep-msgpack`
 =====
 
-This is a [msgpack](https://msgpack.org/index.html) serialization for [rpep.js](https://github.com/Tixit/rpep.js). RPEP is a simple, light-weight protocol for request-response and stream-event style communication between peers.
+This is a [msgpack](https://msgpack.org/index.html) serialization for [rpep.js](https://github.com/Tixit/rpep.js) using [kawanet/msgpack-lite](https://github.com/kawanet/msgpack-lite). RPEP is a simple, light-weight protocol for request-response and stream-event style communication between peers.
 
 Install
 =======
@@ -20,12 +20,12 @@ Accessing rpep:
 var rpepMsgpack = require('rpep-msgpack')
 
 // amd
-require.config({paths: {rpepMsgpack: '../dist/rpep-msgpack.umd.js'}})
+require.config({paths: {rpepMsgpack: '../dist/rpepMsgpack.umd.js'}})
 require(['rpepMsgpack'], function(rpepMsgpack) { /* your code */ })
 
 // global variable
-<script src="rpep-msgpack.umd.js"></script>
-rpepMsgpack; // rpep-msgpack.umd.js can define rpep-msgpack globally if you really
+<script src="rpepMsgpack.umd.js"></script>
+rpepMsgpack; // rpepMsgpack.umd.js can define rpepMsgpack globally if you really
              //   want to shun module-based design
 ```
 

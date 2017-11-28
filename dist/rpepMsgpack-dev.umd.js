@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["msgpack"] = factory();
+		exports["rpepMsgpack"] = factory();
 	else
-		root["msgpack"] = factory();
+		root["rpepMsgpack"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -5015,4 +5015,4 @@ exports.codec = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=msgpack-dev.umd.js.map
+//# sourceMappingURL=rpepMsgpack-dev.umd.js.map

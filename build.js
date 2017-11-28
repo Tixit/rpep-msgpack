@@ -8,7 +8,7 @@ var generatedTestDirectory = path.join(__dirname,'test/generated')
 var copywrite = '/* Copyright (c) 2013 Billy Tetrud - Free to use for any purpose: MIT License*/'
 
 console.log('building and minifying...')
-var name = 'msgpack'
+var name = 'rpepMsgpack'
 build('rpep-msgpack', false, {output: {path:buildDirectory}, header: copywrite, name:name, minify:true})
 build('rpep-msgpack', false, {output: {path:buildDirectory, name:name+'-dev.umd.js'}, header: copywrite, name:name, minify:false})
 
